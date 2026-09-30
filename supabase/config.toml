@@ -1,0 +1,23 @@
+# Supabase Edge Functions Configuration
+# Deploy with: supabase functions deploy <function-name>
+
+[functions.summarize]
+verify_jwt = false
+
+[functions.ingest-rss]
+verify_jwt = false
+
+[functions.generate-digest]
+verify_jwt = false
+
+[functions.send-push]
+verify_jwt = false
+
+[functions.process-payment]
+verify_jwt = true
+
+[functions.payment-callback]
+verify_jwt = false
+
+[functions.scheduled-tasks]
+verify_jwt = false
